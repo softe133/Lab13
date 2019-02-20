@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859 1"?>
+
+<!DOCTYPE cv [
+<!ELEMENT cv(name,PersonalInfo,HardSkills,SoftSkills,Languages,Experience,Education,OtherSkills)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT PersonalInfo(phone,email,LinkedIn)>
+<!ELEMENT PersonalInfo(#PCDATA)>
+<!ELEMENT phone(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT LinkedIn(#PCDATA)>
+<!ELEMENT HardSkills(Coding,Debugging,DatabaseKnowledge)>
+<!ELEMENT HardSkills(#PCDATA)>
+<!ELEMENT Coding(#PCDATA)>
+<!ELEMENT Debugging(#PCDATA)>
+<!ELEMENT DatabaseKnowledge(#PCDATA)>
+<!ELEMENT SoftSkills(Leadership,Collaboration,CriticalThinking)>
+<!ELEMENT SoftSkills(#PCDATA)>
+<!ELEMENT Leadership(#PCDATA)>
+<!ELEMENT Collaboration(#PCDATA)>
+<!ELEMENT CriticalThinking(#PCDATA)>
+<!ELEMENT Languages(Java,SQL,C-sharp,php)>
+<!ELEMENT Languages(#PCDATA)>
+<!ELEMENT Java(#PCDATA)>
+<!ELEMENT SQL(#PCDATA)>
+<!ELEMENT C-sharp(#PCDATA)>
+<!ELEMENT php(#PCDATA)>
+<!ELEMENT Education(StartDate,EndDate,Graduation)>
+<!ELEMENT Education(#PCDATA)>
+<!ELEMENT StartDate(#PCDATA)>
+<!ELEMENT EndDate(#PCDATA)>
+<!ELEMENT Graduation(#PCDATA)>
+<!ELEMENT OtherSkills(Writting)>
+<!ELEMENT OtherSkills(#PCDATA)>
+<!ELEMENT Writting(#PCDATA)>
+]>
+
+
+<xs:element name="cv">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="PersonalInfo">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="phone" type="xs:string"/>
+						<xs:element name="email" type="xs:string"/>
+						<xs:element name="LinkedIn" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="HardSkills">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Coding" type="xs:string"/>
+						<xs:element name="Debugging" type="xs:string"/>
+						<xs:element name="DatabaseKnowledge" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="SoftSkills">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Leadership" type="xs:string"/>
+						<xs:element name="Collaboration" type="xs:string"/>
+						<xs:element name="CriticalThinking" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="Languages">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Java" type="xs:string"/>
+						<xs:element name="SQL" type="xs:string"/>
+						<xs:element name="C-sharp" type="xs:string"/>
+						<xs:element name="php" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="Experience" type="xs:string"/>
+			
+			<xs:element name="Education">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Graduation" type="xs:string"/>
+						<xs:element name="StartDate" type="xs:string"/>
+						<xs:element name="EndDate" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="OtherSkills">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Writting" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+                        <!-- CV -->
+
+<cv>
+<name>Hina</name>
+
+<PersonalInfo>
+	<phone>56478904321</phone>
+	<email>ujjanhina@gmail.com</email>
+	<LinkedIn>www.linkedin.com/vabnam.vabname</LinkedIn>
+</PersonalInfo>
+
+<HardSkills>
+	<Coding>Expert</Coding>
+	<Debugging>advanced</Debugging>
+	<DatabaseKnowledge>basic</DatabaseKnowledge>
+</HardSkills>
+
+<SoftSkills>
+	<Leadership>Expert</Leadership>
+	<Collaboration>advanced</Collaboration>
+	<CriticalThinking>advanced</CriticalThinking>
+</SoftSkills>
+
+<Languages>
+	<Java>Expert</Java>
+	<SQL>Expert</SQL>
+	<C-sharp>Advanced</C-sharp>
+	<php>Intermedate</php>
+</Languages>
+
+<Experience>Freelance Software Engineer</Experience>
+
+<Education>
+	<Graduation>BE in software</Graduation>
+	<StartDate>2015</StartDate>
+	<EndDate>2019</EndDate>
+</Education>
+
+<OtherSkills>
+	<Writting>Technical Report Writing</Writting>
+</OtherSkills>
+</cv>

@@ -1,0 +1,31 @@
+
+var uni = [
+
+{
+	"dept":"electrical",
+	"lat":"25.44°",
+	"long":"68.205°"
+},
+{
+	"dept":"software",
+	"lat":"25.40°",
+	"long":"68.2600°"
+},
+{
+	"dept":"mechanical",
+	"lat":"25.4070°",
+	"long":"68.2601°"
+},
+{
+	"dept":"civil",
+	"lat":"25.4060°",
+	"long":"68.2505°"
+},
+{
+	"dept":"industrial",
+	"lat":"25.3004°",
+	"long":"68.2001°"
+}
+
+
+]

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859 1"?>
+
+<!DOCTYPE university [
+<!ELEMENT university(department)>
+<!ELEMENT department(software)>
+<!ELEMENT software(labs, classrooms, teachers, students)>
+<!ELEMENT labs(#PCDATA)>
+<!ELEMENT classrooms(#PCDATA)>
+<!ELEMENT teachers(#PCDATA)>
+<!ELEMENT students(batch,Rollnumber)>
+<!ELEMENT batch(#PCDATA)>
+<!ELEMENT Rollnumber(#PCDATA)>
+]>
+
+
+<xs:element name="university">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="department">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="software">
+						  <xs:complexType>
+							<xs:sequence>
+						<xs:element name="labs" type="xs:string"/>
+						<xs:element name="classrooms" type="xs:string"/>
+						<xs:element name="teachers" type="xs:string"/>
+			<xs:element name="students">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="batch" type="xs:string">
+						<xs:element name="Rollnumber" type="xs:string">
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+
+<university>
+	<department>
+		<software>
+			<labs>six-labs</labs>
+			<classrooms>three</classrooms>
+			<teachers>twenty</teachers>
+			<students>
+				<batch>16-batch</batch>
+				<Rollnumber>SW24</Rollnumber>
+			</students>
+		</software>
+	</department>
+</university>
